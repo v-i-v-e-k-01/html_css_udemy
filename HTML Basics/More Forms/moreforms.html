@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Other form controls</h1>
+
+    <h2>Text Areas</h2>
+    <form>
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" rows="10" cols="50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic aspernatur ex placeat modi, odio porro corporis at cum quod eos neque ipsam. Earum repellat unde exercitationem, esse fuga asperiores consequuntur.
+        </textarea>
+        <!-- can be blank or filled initially -->
+        <button>Submit</button>
+    </form>
+
+    <h2>Checkbox and Range</h2>
+    <form action="">
+        <div>
+            <label for="checkbox"> Agree to Terms and Conditions:</label>
+            <input type="checkbox" id="checkbox" name="checkbox" required checked>
+
+
+        </div>
+
+        <div>
+            <label for="volume">Select Volume:</label>
+            <input type="range" min="0" max="10" id="volume" name="volume" value="8" step="2">
+            <!-- "min" and "max" set the division of range control bar into max-min parts 
+             Also, initial value can be set using "value" attribute  
+             No. of hops each drag can be set using "step" attribute-->
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <h2>Select - Drop Down</h2>
+    <form action="">
+        <label for="level">Select Level:</label>
+        <select id="level" name="level">
+            <option value="1">level 1</option>
+            <option value="2">level 2</option>
+            <option value="3" selected>level 3</option>
+        </select>
+        <button>Submit</button>
+    </form>
+
+    <h2>Radio Button</h2>
+    <form action="">
+        <fieldset>
+            <legend>Choose Shirt Size:</legend>
+            <div>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+            </div>
+            <div>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+            </div>
+            <div>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+            </div>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+
+    <h2>Other Input tag types</h2>
+    <form action="">
+        <label for="cl">Choose Background Color</label>
+        <input type="color" id="cl" name="bgcol">
+
+        <label for="strtdt">Start Date:</label>
+        <input type="date" id="strtdt" name="strtdt">
+
+        <label for="disabled">Disabled</label>
+        <input type="text" id="disabled" name="disabled_text" disabled>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

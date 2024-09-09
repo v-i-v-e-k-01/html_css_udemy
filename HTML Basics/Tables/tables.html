@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        thead{
+            background-color: burlywood;
+            color: white;
+        }
+        tfoot
+        {
+            background-color:burlywood;
+            color:white;
+        }
+        table
+        {
+            background-color: palegoldenrod;
+            color: black;
+        }
+        td,th{
+            border: 1px solid grey; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1> Tables</h1>
+
+    <table>
+        <caption> Top IMDB Rated Movies</caption>
+
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Release Year</th>
+                <th>IMDB Rating</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>The Shawshank Redemption</td>
+                <td>1994</td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>The Godfather</td>
+                <td>1972</td>
+                <td>9.2</td>
+            </tr>
+            <tr>
+                <td>The Dark Knight</td>
+                <td>2008</td>
+                <td>9.0</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <th>Footer1</th>
+                <th>Footer2</th>
+                <th>Footer3</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+    <br>
+
+
+    <table>
+        <caption> Stationary List</caption>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pencils</td>
+                <td>2</td>
+                <td>$1</td>
+                <td>$2</td>
+            </tr>
+            <tr>
+                <td>Erasers</td>
+                <td>4</td>
+                <td>$0.50</td>
+                <td>$2</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Subtotal</td>
+                <td>$4</td>
+            </tr>
+            <tr>
+                <td colspan="2">Tax</td>
+                <td>10%</td>
+                <td>$0.4</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

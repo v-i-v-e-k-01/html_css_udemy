@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="/login">
+        <h1>Form Basics</h1>
+
+        <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+
+        <button type="submit">Login</button>
+        <!-- OR -->
+        <input type="submit" value="Login">
+    </form>
+
+    <h1>Input Elements</h1>
+    <form action="">
+        <label for="em">Email:</label>
+        <input type="email" placeholder="email" id="em">
+
+        <label for="lkd">LinkedIN Profile:</label>
+        <input type="url" placeholder="url" id="lkd">
+
+        <input type="number" placeholder="number">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h1>The Name Attribute</h1>
+    <form action="">
+        <div>
+            <label for="state">State</label>
+            <input type="text" name="state" id="state" placeholder="state">
+            <!-- the form returns the input as value to key "state" http://127.0.0.1:5500/Forms.html?state=Maharashtra -->
+            <!-- name attribute defines the key name -->
+        </div>
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="city">
+        <!-- http://127.0.0.1:5500/Forms.html?state=Maharashtra&city=Navi+Mumbai -->
+        
+        <label for="number">Required No.</label>
+        <input type="number" name="number" id="number" placeholder="number" required>
+        <!-- cant submit without entering above input due to "required" attribute -->
+
+        <button>Submit</button>
+
+    </form>
+</body>
+
+</html>
