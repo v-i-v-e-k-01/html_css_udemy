@@ -1,0 +1,21 @@
+#firstPara{
+    color:yellowgreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.blue{
+    color:blue;
+}
+
+.bigFont{
+    font-size: 28px;
+}
+
+.red{
+    color: red;
+}
+
+.smallStuff{
+    font-size: 11px;
+}

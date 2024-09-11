@@ -1,0 +1,253 @@
+body {
+    background-color: black;
+    font-family: monospace;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color:#349734;
+    /* background: url("background.jpg");
+    background-size: cover;
+    background-position: center; */
+    background-color: black;
+}
+
+#wrapper {
+    width:90%;
+    margin:0% 5% 0% 5%;
+}
+#info{
+    background-color: black;
+
+}
+#info img,
+#info h1,
+#info h2 {
+    display: inline-block;
+}
+
+#info img {
+    width: 5%;
+    height: 5%;
+}
+
+#info h1{
+    color:#00d5ff;
+    font-size: 2em;
+}
+
+#info h2{
+    color:#00d5ff;
+    margin-left: 1%;
+    font-size:0.8em;
+}
+
+nav {
+    width: 100%;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: black;
+    border: 2px solid grey;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0.25% 1% 0.25% 1%;
+}
+
+nav a {
+    width: auto;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    border-bottom: 2px solid #349734;
+    color: #349734;
+}
+
+nav a:hover {
+    color: #00F500;
+    border-bottom: 2px solid;
+
+}
+
+#banner{
+    background: url("banner.jpg");
+    height: 200px;
+    background-size:cover;
+    text-transform: lowercase;
+    color:#00F500;
+    text-align: justify;
+    text-indent: 2%;
+    background-size: cover;
+    
+}
+
+#bannerText{
+    position:absolute;
+    margin-top:8%;
+    background-color:#146514 ;
+    right:8%;
+    padding:15px;
+    color:#043804;
+}
+
+section article, section aside{
+    
+    display: inline-block;
+    margin: 2% 0% 2% 0%;
+
+}
+
+section article{
+    float: left;
+    width:64%;
+    border-right:2px solid grey;    
+    
+}
+
+section article img{
+    float: left;
+    width: 49%;
+}
+
+section aside{
+    float: right;
+    width: 33%;
+}
+
+footer{
+    clear: both;
+    background: black;
+    color:red;
+    border-top:2px solid grey ;
+
+}
+footer div{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+footer a{
+    color:red;
+}
+
+footer a:hover{
+    color: #00F500;
+}
+
+
+
+/* Solution: */
+
+/* body {
+    background-color: aliceblue;
+    font-family: fantasy;
+}
+ 
+#wrapper {
+    width: 80%;
+    margin: 10%;
+}
+ 
+#info img,
+#info h1,
+#info h2 {
+    display: inline-block;
+}
+ 
+#info img {
+    max-width: 50px;
+    max-height: 50px;
+}
+ 
+#info h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+ 
+#info h2 {
+    color: #333;
+    margin-left: 15px;
+    font-size: 0.8em;
+}
+ 
+#banner {
+    background: url('CSS.png') no-repeat;
+    height: 200px;
+    background-size: cover;
+    position: relative;
+}
+ 
+#bannerText {
+    position: absolute;
+    bottom: 10%;
+    background-color: red;
+    right: 10%;
+    padding: 15px;
+    color: white;
+    border-radius: 15px 5px;
+    font-size: 1.2em;
+}
+ 
+nav {
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+    background-color: black;
+}
+ 
+nav ul {
+    list-style-type: none;
+}
+ 
+nav li {
+    display: inline-block;
+}
+ 
+nav a {
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.5em;
+    border-bottom: 1px dotted red;
+    color: white;
+}
+ 
+nav a:hover {
+    color: aqua;
+    border-bottom: 3px solid blue;
+}
+ 
+section article,
+section aside {}
+ 
+section article {
+    float: left;
+    width: 65%;
+    margin: 0;
+}
+ 
+section article img{
+    max-width: 50%;
+}
+section aside {
+    float: right;
+    width: 34%;
+    margin: 0;
+}
+ 
+footer {
+    clear: both;
+    background: #ddd;
+}
+ 
+footer div{
+    display: inline-block;
+    width:33%;
+    vertical-align: top;
+ 
+} */

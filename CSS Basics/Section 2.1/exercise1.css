@@ -1,0 +1,43 @@
+li{
+    display: inline-block;
+    width:100px;
+    height:30px;
+    background-color: #AA3939;
+    text-align: center;
+    border: 1px solid;
+}
+nav{
+    background-color: #801515;
+    height: 50px;
+    width: auto;
+    align-items: center;
+}
+.title{
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#firstSection{
+    display:block;
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    background-color: #801515;
+    width: 100%;
+}
+
+body{
+    background-color: #D46A6A;
+    color: #F6ACB5;
+}
+
+section{
+    .sectionhead{
+        text-decoration: underline;
+    }
+    background: rgba(255, 0, 25, 0.76);
+}
+

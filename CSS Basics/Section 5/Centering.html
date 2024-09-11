@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* centering using positioning */
+        .main {
+            border: 1px solid blue;
+            max-width: 400px;
+            margin: auto;
+            height: 200px;
+
+            position: relative;
+        }
+
+        .output {
+            text-align: center;
+            border: 1px solid red;
+            max-width: 200px;
+            margin: auto;
+            height: 50px;
+
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            
+            line-height: 50px;
+            padding: 20px;
+        }
+
+
+        /* centering using flex 1 */
+        .main1 {
+            border: 1px solid green;
+            margin-top: 50px;
+            max-width: 500px;
+            height: 100px;
+
+            display: flex;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+        }
+
+        .output1 {
+            border: 1px solid orange;
+            width: 200px;
+            height: 50px;
+            background-color: aliceblue;
+
+            position: absolute;
+            top: 50%;
+            
+            margin-top: -25px;
+            line-height: 50px;
+        }
+
+        /* centering using flex 2 */
+        .main2{
+            border: 1px solid pink;
+            height: 100px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .output2{
+            text-align: center;
+            border: 1px solid bisque;
+            height: 50px;
+            width: 100px;
+            line-height: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="output">
+            Hello World
+        </div>
+    </div>
+    <div class="main1">
+        <div class="output1">
+            Hello World
+        </div>
+    </div>
+    <div class="main2">
+        <div class="output2">
+            Hello World
+        </div>
+    </div>
+</body>
+
+</html>
