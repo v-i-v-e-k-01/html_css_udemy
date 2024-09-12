@@ -7,15 +7,18 @@
     <title>Document</title>
     <style>
         /* centering using positioning */
+
+        /* Outer box */
         .main {
             border: 1px solid blue;
             max-width: 400px;
             margin: auto;
             height: 200px;
 
-            position: relative;
+            position: relative; 
         }
 
+        /* Inner box */
         .output {
             text-align: center;
             border: 1px solid red;
@@ -24,10 +27,13 @@
             
             
             margin: auto;
+            /* or (margin-left:auto; margin-right: auto) -- gets max margin on left and right (centering acc to margin)  */
             position: absolute;
             left:50%;
             top:50%;
+            /* moves the top left corner of inner box to the CENTER of outer box */
             transform: translate(-50%,-50%);
+            /*  */
             
             line-height: 50px;
             padding: 20px;
@@ -43,6 +49,7 @@
 
             display: flex;
             justify-content: center;
+            /* aligns items along the main axis  (default -- horizontal axis) */
             position: relative;
             text-align: center;
         }
@@ -67,7 +74,9 @@
 
             display: flex;
             justify-content: center;
+            /* aligns items along the main axis  (default -- horizontal axis) */
             align-items: center;
+            /* aligns items along the cross axis (perpendicular to main axis) */
             margin-bottom: 100px;
         }
 
