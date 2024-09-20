@@ -1,0 +1,255 @@
+/* Universal Selector */
+
+/* *{
+    font-weight: bold;
+} */
+
+
+
+/* Attribute Selectors */
+
+/* [lang]{
+    font-weight:bold;
+} */
+
+/* [lang="es"]{
+    font-weight: bold;
+} */
+
+/* [class~="basiclist"]{
+    font-style: italic;
+} */
+
+
+
+/* ID Selector */
+/* #skills{
+    font-weight: bold;
+} */
+
+
+
+/* Class Selector */
+/* *.resume-list{
+    font-weight: bold;
+} */
+
+/* ul.resume-list{
+    font-weight: bold;
+}
+
+.resume-list.etc{
+    font-style: italic;
+} */
+
+
+
+/* Grouping Selectors */
+/* ul[lang], table.resume-list, p{
+    font-weight: bold;
+} */
+
+
+
+/* Combinators */
+
+
+
+/* Descendant Combinators */
+/* blockquote p{
+    font-style: italic;
+} */
+
+/* Child Combinators */
+/* form > p{
+    font-weight: bold;
+} */
+
+
+
+
+/* Next-sibling Combinators */
+/* h2 + blockquote{
+    font-weight: bold;
+}
+
+li + li{
+    font-weight: bold;
+} */
+
+
+
+
+/* Subsequent sibling Combinator */
+/* h2 ~ blockquote{
+    font-style: italic;
+} */
+
+
+
+
+
+
+
+
+/* Child-indexed Pseudo Classes */
+/* li:nth-child(2n+1){
+    font-weight: bold;
+} */
+
+/* #newart p:nth-child(3n+1){
+    font-style: italic;
+} */
+
+
+
+/* Type Child-indexed Pseudo Classes */
+/* article p:nth-of-type(odd){
+    font-weight: bold;
+} */
+
+/* article > p:nth-of-type(odd){
+    font-weight: bold;
+} */
+
+
+
+
+/* Location Pseudo Classes */
+/* a:visited{
+    color:red;
+} */
+
+
+
+/* User action Pseudo Classes */
+a:hover{
+    color:red;
+}
+
+a:focus{
+    color:burlywood;
+}
+
+input:focus, select:focus{
+    outline: 2px solid black;
+}
+
+
+
+/* Negation Pseudo Class */
+/* section:not(#testimonials){
+    font-style: italic;
+} */
+
+
+
+/* Pseudo elements */
+/* 
+p::first-letter{
+    font-weight: bold;
+} */
+
+
+
+ul{
+    font-weight: 100;
+}
+
+
+
+
+/* Units of measurement */
+/*
+body{
+    font-size:32px;
+}
+
+section{
+    font-size:2em;
+}
+
+li{
+    font-size: 1.25rem;
+} */
+
+
+main{
+    max-width:80%;
+    padding:0 2rem;
+    border-left: 2px solid black;
+    border-right: 2px solid black; 
+    border-bottom: 2px solid black; 
+    /* border-top: 2px solid black;  */
+
+
+    margin-left: auto;
+    margin-right:auto;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    padding: 1.3rem 0 0 0;
+}
+
+/* #testimonials blockquote{
+    border: 1px solid red;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin:0.5rem;
+    height:20px;
+    overflow:auto;
+} */
+
+.resume-fieldset{
+    border:no
+}
+
+
+
+/* Z-index */
+nav{
+    position: sticky; 
+    /* every positioned elements create a new stacking context */
+    /* creates new stacking context for elements inside nav */
+    /* but its own stacking context is original page context */
+    top:0;          
+    border: 1px solid black;
+    background-color: white;
+}
+
+nav ul{
+    z-index:1;
+    /* z-index is within the nav stacking context/container and not the original page stacking context, thus components outside nav arent affected by this z-index value */
+}
+
+
+
+/* blockquote:first-of-type{
+    position: absolute;
+    // has stacking context of original page 
+    top:0;
+    left:0;
+    background-color: white;
+    border:1px solid red;
+} */
+
+
+/* the above code would put the blockquote on top; this isnt because of any stacking context difference as nav and blockqoute both are in original page context, but because nav comes first in DOM tree, thus painted first  and thus is at bottom*/
+
+/* if we add a positive z-index for nav, (its in original page context same as blockquote), it will be on top  as given in below code*/
+
+nav{
+    z-index: 10;
+}
+
+
+/* Images */
+nav li{
+    display: inline-block;
+    margin:0% 2% 0% 2%;
+}
+

@@ -1,0 +1,14 @@
+---How to use the source code files:
+
+	Each folder corresponds to a lecture, and has an alphabetical prefix so the folders sort in the proper order. The 
+	name of the folder has the structure of ALPHA_SECTIONNAME_LESSONNAME.
+
+	Inside each folder, you will find a "Begin" and "Finished" folder. The "Begin" folder contains the source code 		
+	you should have when the lecture begins, and the "Finished" folder contains the source code you should have when 	
+	the lecture ends.
+
+	Please note, not every lecture has source code.
+
+
+---Github:
+	https://github.com/AnthonyPAlicea/htmlcss

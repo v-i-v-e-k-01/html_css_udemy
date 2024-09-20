@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resume of Tony Alicea</title>
+    <!-- <style>
+        th, td{
+            border:2px solid black;
+            empty-cells: hide;
+         }
+    </style> -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        ul{
+            /* font-weight: 200 !important; */
+            font-weight: 200;
+        }
+    </style>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <h1> &NestedLessLess; Resume &NestedGreaterGreater; </h1>
+    <nav>
+        <ul>
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#workhistory">Work History</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#mailingaddress">Mailing Address</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="intro">
+            <h2>Tony Alicea</h2>
+            <p>
+                Coder, UX Designer, and Instructor
+            </p>
+            <dl>
+                <dt>Website</dt>
+                <dd> <a href="https://www.google.com" target="_blank">google.com</a> </dd>
+                <dd> <a href="https://www.anthonyalicea.com" target="_blank">anthonyalicea.com</a> </dd>
+
+                <dt>Phone</dt>
+                <dd>555-555-1111</dd>
+
+                <dt>Twitter</dt>
+                <dd> <a href="https://www.twitter.com/AnthonyPAlicea">@anthonypalicea</a> </dd>
+            </dl>
+        </section>
+        <!-- <article id="newart">
+            <aside>Electronics</aside>
+            <p>Smartphones, Laptops, and more.</p>
+            <p>Accessories and peripherals.</p>
+            <p>These products are available in various brands.</p>
+        </article> -->
+        <article id="aboutme">
+            <header>About Me</header>
+            <p>
+                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+            </p>
+            <aside><p><small>Don't imitate, understand!</small></p></aside>
+            <!-- <p>Hello this is paragraph 2</p> -->
+            <footer>
+                Contact No.
+            </footer>
+        </article>
+
+        <section id="services">
+            <h2> Services</h2>
+            <ul>
+                <li>
+                    Web Development
+                </li>
+                <li>
+                    App Development
+                </li>
+                <li>
+                    Training
+                </li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2> Skills</h2>
+            <ul class="resume-list basiclist skilllist etc">
+                <li lang>
+                    HTML
+                    Markup your content with semantic HTML.
+                </li>
+                <li lang="es">
+                    CSS
+                    Layout your content visually for multiple devices.
+                </li>
+                <li>
+                    JavaScript
+                    Make your content more interactive, and build web applications.
+                </li>
+            </ul>
+        </section>
+        <section id="workhistory">
+            <h2>Work History</h2>
+            <table class="resume-list basiclist">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UX/UI Designer</td>
+                        <td>XYZ Corp</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Web Developer</td>
+                        <td>ABC Corp</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Carpet Cleaner</td>
+                        <td>123 Inc.</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total Years</td>
+                        <td>10</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <!-- Needs pictures-->
+        <img src="https://picsum.photos/id/165/200/300" alt="farm with blue sky">
+        <img src="https://picsum.photos/id/1045/200" alt="cloud covered mountaintop">
+        <img src="https://picsum.photos/id/107/250" alt="wheat field with wheat stalks close view">
+        <img src="https://picsum.photos/id/147/300/170" alt="empty ocean with mild waves">
+        <img src="https://picsum.photos/id/306/150" alt="flower among rocks">
+        <img src="https://picsum.photos/id/179/175" alt="waves crashing against boulders">
+        <img src="https://picsum.photos/id/258/120" alt="flock of birds">
+
+
+        <section id="portfolio">
+            <h2> Portfolio</h2>
+        </section>
+        <section id="testimonials">
+            <h2> Testimonials</h2>
+            <blockquote>
+                <p> I love Tony's courses!</p>
+                <p> I love Tony's courses!</p>
+                <p> I love Tony's courses!</p>
+                <p> I love Tony's courses!</p>
+            </blockquote>
+            <blockquote>
+                <p> Tony's courses <strong> helped me get a job.</strong></p>
+            </blockquote>
+            <blockquote>
+                <p>I love learning about HTML &amp; CSS!</p>
+            </blockquote>
+        </section>
+        <section id="mailingaddress">
+            <h2>Mailing Address</h2>
+            <address>
+                111 Main St.<br>
+                Somewhere, NY 33333
+            </address>
+        </section>
+        <section id="contactme">
+            <h2>Contact Me</h2>
+            <form action="dosomething.html" method="POST">
+                <p>
+                    <label>
+                        Name
+                        <input type="text" name="name" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="whycontacting">Why Contacting</label>
+                    <select id="whycontacting" name="whycontacting">
+                        <option value="jobinterview">Job Interview</option>
+                        <option value="needcontractor">Need Contractor</option>
+                    </select>
+                </p>
+                <p>
+                    <label>
+                        Comments
+                        <textarea id="comments" name="comments" rows="3"></textarea>
+                    </label>
+                </p>
+                <fieldset class="resume-fieldset">
+                    <legend>Best Contact Time</legend>
+                    <p>
+                        <label>
+                            <input type="radio" id="contacttime1" name="contacttime" value="morning">
+                            Morning
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" id="contacttime2" name="contacttime" value="afternoon">
+                            Afternoon
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" id="contacttime3" name="contacttime" value="evening">
+                            Evening
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" id="asap" name="asap">
+                            ASAP
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <!--
+                    <input type="button" value="Submit">
+                    // does noting by default 
+                    <input type="submit" value="Submit">
+                    // submits form by default
+                    -->
+                    <button type="submit">Submit</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <aside>
+        Advertisements for other courses
+    </aside>
+</body>
+
+</html>
