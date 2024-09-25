@@ -12,7 +12,7 @@
     </style> -->
     <link rel="stylesheet" href="styles.css">
     <style>
-        ul{
+        ul {
             /* font-weight: 200 !important; */
             font-weight: 200;
         }
@@ -59,11 +59,16 @@
             <p>These products are available in various brands.</p>
         </article> -->
         <article id="aboutme">
-            <header>About Me</header>
+            <header class="flex-header"><h2>About Me</h2></header>
+            <img src="mypicture.png" class="my-picture">
             <p>
                 Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
             </p>
-            <aside><p><small>Don't imitate, understand!</small></p></aside>
+            <aside class="motto">
+                <p><small>Don't imitate, understand!</small></p>
+            </aside>
             <!-- <p>Hello this is paragraph 2</p> -->
             <footer>
                 Contact No.
@@ -136,31 +141,34 @@
                 </tfoot>
             </table>
         </section>
-        <!-- Needs pictures-->
-        <img src="https://picsum.photos/id/165/200/300" alt="farm with blue sky">
-        <img src="https://picsum.photos/id/1045/200" alt="cloud covered mountaintop">
-        <img src="https://picsum.photos/id/107/250" alt="wheat field with wheat stalks close view">
-        <img src="https://picsum.photos/id/147/300/170" alt="empty ocean with mild waves">
-        <img src="https://picsum.photos/id/306/150" alt="flower among rocks">
-        <img src="https://picsum.photos/id/179/175" alt="waves crashing against boulders">
-        <img src="https://picsum.photos/id/258/120" alt="flock of birds">
 
 
         <section id="portfolio">
             <h2> Portfolio</h2>
+            <!-- Needs pictures-->
+            <img class="anchor" src="https://picsum.photos/id/165/200/300" alt="farm with blue sky">
+            <img src="https://picsum.photos/id/1045/200" alt="cloud covered mountaintop">       
+            <img src="https://picsum.photos/id/107/250" alt="wheat field with wheat stalks close view">
+            <img src="https://picsum.photos/id/147/300/170" alt="empty ocean with mild waves">
+            <img src="https://picsum.photos/id/306/150" alt="flower among rocks">
+            <img src="https://picsum.photos/id/179/175" alt="waves crashing against boulders">
+            <img src="https://picsum.photos/id/258/120" alt="flock of birds">
         </section>
         <section id="testimonials">
-            <h2> Testimonials</h2>
+            <h2 class="flex-header"> Testimonials</h2>
             <blockquote>
                 <p> I love Tony's courses!</p>
+                <!-- <p> I love Tony's courses!</p>
                 <p> I love Tony's courses!</p>
-                <p> I love Tony's courses!</p>
-                <p> I love Tony's courses!</p>
+                <p> I love Tony's courses!</p> -->
             </blockquote>
-            <blockquote>
+
+            <!-- <blockquote class="secondbq" style="margin-bottom:30px;"> -->
+            <blockquote class="secondbq">
                 <p> Tony's courses <strong> helped me get a job.</strong></p>
             </blockquote>
-            <blockquote>
+            <!-- <blockquote class="thirdbq"  style="margin-top:20px;"> -->
+            <blockquote class="featured">
                 <p>I love learning about HTML &amp; CSS!</p>
             </blockquote>
         </section>
@@ -174,28 +182,28 @@
         <section id="contactme">
             <h2>Contact Me</h2>
             <form action="dosomething.html" method="POST">
-                <p>
-                    <label>
+                <p class="field">
+                    <label for="name" class="label-standard">Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <!-- <label>
                         Name
                         <input type="text" name="name" required>
-                    </label>
+                    </label> -->
                 </p>
-                <p>
-                    <label for="email">Email</label>
+                <p class="field">
+                    <label for="email" class="label-standard">Email</label>
                     <input type="email" id="email" name="email">
                 </p>
-                <p>
-                    <label for="whycontacting">Why Contacting</label>
+                <p class="field">
+                    <label for="whycontacting" class="label-standard">Why Contacting</label>
                     <select id="whycontacting" name="whycontacting">
                         <option value="jobinterview">Job Interview</option>
                         <option value="needcontractor">Need Contractor</option>
                     </select>
                 </p>
-                <p>
-                    <label>
-                        Comments
-                        <textarea id="comments" name="comments" rows="3"></textarea>
-                    </label>
+                <p class="field">
+                    <label for="comments" class="label-standard">Comments</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
                 </p>
                 <fieldset class="resume-fieldset">
                     <legend>Best Contact Time</legend>

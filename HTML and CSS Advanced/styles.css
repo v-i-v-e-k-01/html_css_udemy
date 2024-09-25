@@ -1,3 +1,21 @@
+/* for displaying -- below few lines (not in course) */
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    padding: 1.3rem 0 0 0;
+}
+
+/* nav ul{
+    display: flex;
+    justify-content: center;
+} */
+
+
+
+
 /* Universal Selector */
 
 /* *{
@@ -123,15 +141,16 @@ li + li{
 
 
 /* User action Pseudo Classes */
-a:hover{
-    color:red;
+a:hover {
+    color: red;
 }
 
-a:focus{
-    color:burlywood;
+a:focus {
+    color: burlywood;
 }
 
-input:focus, select:focus{
+input:focus,
+select:focus {
     outline: 2px solid black;
 }
 
@@ -152,10 +171,9 @@ p::first-letter{
 
 
 
-ul{
+ul {
     font-weight: 100;
 }
-
 
 
 
@@ -174,27 +192,30 @@ li{
 } */
 
 
-main{
-    max-width:80%;
+main {
+    /* max-width: clamp(700px, 80%, 1000px);
     padding:0 2rem;
     border-left: 2px solid black;
     border-right: 2px solid black; 
-    border-bottom: 2px solid black; 
+    border-bottom: 2px solid black;  */
     /* border-top: 2px solid black;  */
 
-
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+
+    /* rewriting using logical directions properties for multilingual compatibility (block and inline direction) */
+    max-inline-size: clamp(700px, 80%, 1000px);
+    padding-inline: 2rem;
+    padding-block: 0;
+    border-inline-start: 2px solid black;
+    border-inline-end: 2px solid black;
+    border-block-end: 2px solid black;
+
+    margin-inline-start: auto;
+    margin-inline-end: auto;
 }
 
-h1{
-    text-align: center;
-}
 
-h2{
-    margin: 0;
-    padding: 1.3rem 0 0 0;
-}
 
 /* #testimonials blockquote{
     border: 1px solid red;
@@ -204,27 +225,32 @@ h2{
     overflow:auto;
 } */
 
-.resume-fieldset{
-    border:no
+.resume-fieldset {
+    border: no
 }
+
 
 
 
 /* Z-index */
-nav{
-    position: sticky; 
+nav {
+    position: sticky;
     /* every positioned elements create a new stacking context */
     /* creates new stacking context for elements inside nav */
     /* but its own stacking context is original page context */
-    top:0;          
     border: 1px solid black;
     background-color: white;
+
+    top: 0;
+    /* rewriting using logical directions properties for multilingual compatibility (block and inline direction) */
+    /* inset-inline-start: 0;     */
 }
 
-nav ul{
-    z-index:1;
+nav ul {
+    z-index: 1;
     /* z-index is within the nav stacking context/container and not the original page stacking context, thus components outside nav arent affected by this z-index value */
 }
+
 
 
 
@@ -242,14 +268,278 @@ nav ul{
 
 /* if we add a positive z-index for nav, (its in original page context same as blockquote), it will be on top  as given in below code*/
 
-nav{
+nav {
     z-index: 10;
 }
 
+/* display property */
 
-/* Images */
-nav li{
-    display: inline-block;
-    margin:0% 2% 0% 2%;
+/* display: block */
+/* (sets outer type as block, and inner type as normal flow/default which is inline) */
+
+form>p label.label-standard {
+    display: block;
+    margin: 0.125rem;
+}
+
+/* display: inline */
+/* nav ul li{
+    display: inline;
+    // margin: 0% 2% 0% 2%;
+    // rewriting margin using logical directions properties for multilingual compatibility (block and inline direction) 
+    margin-inline:2%;
+    margin-block: 0%;
+} */
+
+/* Margin Collapse */
+/* #testimonials blockquote{
+    border: 1px solid black;
+    display: block;
+}
+#testimonials.secondbq{
+    // see html file inline css style 
+}
+
+#testimonials.thirdbq{
+    // see html file inline css style 
+}
+ */
+
+/* form p.field{
+    
+} */
+
+/* float property -- old version (dont use now) */
+.my-picture {
+    /* max-width: 75px;
+    float: left;
+    margin-right: 1rem; */
+    /* rewriting margin using logical directions properties for multilingual compatibility (block and inline direction) */
+    max-inline-size: 75px;
+    float: inline-start;
+    margin-inline-end: 1rem;
+}
+
+/* line box familiarising */
+section#portfolio img {
+    vertical-align: top;
+}
+
+/* #aboutme{
+    line-height: 50px;
+    text-align: center;
+    text-align: justify;
+} */
+
+
+/* flow-root */
+/* #aboutme{
+    background-color: black;
+    color: white;
+    img{
+        min-block-size:150px;
+    }
+    display: flow-root;
+} */
+
+
+/* changing inline and block direction for multilingual support */
+/* body{
+    writing-mode:vertical-rl;
+} */
+/* 
+body{
+    writing-mode: horizontal-tb; 
+    direction:rtl;
+} */
+
+/* body{
+    writing-mode:vertical-lr;
+    direction:rtl;
+    text-orientation: upright;
+} */
+
+/* 
+#testimonials blockquote{
+    border: 1px solid black;
+    margin-block-start: 2rem;
+    margin-block-end: 3rem;
+} */
+
+
+
+
+
+
+/* Flex box */
+/* nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-inline: 2%;
+    margin-block: 0%;
+    list-style: none;
+} */
+
+/* #aboutme {
+    display: flex;
+    flex-wrap:wrap;
+} */
+
+
+/* #testimonials {
+    display: flex;
+    //flex-direction: row-reverse;
+    flex-direction: column;
+    flex-wrap:wrap;
+} */
+
+
+
+/* flexbox order */
+/* #testimonials {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+#aboutme aside {
+    order: 10;
+}
+#testimonials h2{
+    order:-2;
+}
+blockquote.featured {
+    order: -1;
+} */
+/* displays above all other elements in the flex container which holds the featured blockquote*/
+
+
+/* flex-shrink */
+/* #aboutme {
+    display: flex;
+} */
+
+/* #aboutme aside footer header img{
+    flex-shrink: 0;
+} */
+ 
+
+
+
+/* flex-basis */
+#aboutme{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#testimonials{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    blockquote{
+        margin:0;
+    }
+}
+
+
+.flex-header, .motto{
+    flex-basis:100%;
+}
+
+/* aligning along main and cross axis  */
+nav ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+
+/* Grid Layout */
+body{
+    display:grid;
+}
+
+#portfolio{
+    display:grid;
+    /* grid-template-columns: 1fr [col1] 1fr 1fr minmax(150px, 1fr); */
+    /* 4 columns in total */
+    /* names first column col1, states min and max width of last column as 150px and 1fr respectively */
+
+    /* grid-template-rows: 1fr 1fr; */
+    /* can also be rewritten as grid-template-rows: repead(2, 1fr); */
+
+    /* row-gap:10px; */
+    /* column-gap:10px; */
+    /* OR */
+    grid-gap:10px;
+    
+    /* shorthand */
+    /* grid-template: repeat(2, 1fr) / repeat(3, 1fr) minmax(150px, 1fr) */
+    /* rows / columns */
+    grid-template: minmax(2em,3em) 1fr/ repeat(3, 1fr) minmax(150px,1fr);
+}
+
+
+#portfolio img{
+    max-inline-size: 100%; 
+    /* defines maximum size of element as 100% of size of grid cell */
+    /* prevents grid from overflowing */
+}
+
+#portfolio img.anchor{
+    /* grid-column-start:3;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:3; */
+
+    /* grid-column:3/4;
+    grid-row:1/3; */
+
+    /* grid-area: 2/3/4/4; */
+    /* row-start/column-start/row-end/column-end */
+}
+
+#portfolio h2{
+    /* grid-row: 1/2;
+    grid-column:1/5; */
+}
+
+
+/* naming grid cells */
+#portfolio{
+    grid-template-areas:"portfolio portfolio portfolio portfolio"
+                        "img2 img3 anchor img4"
+                        "img5 img6 anchor img7";
+}
+#portfolio img.anchor{
+    grid-area:anchor;
+}
+#portfolio h2{
+    grid-area:portfolio;
+}
+
+
+/* aligning rows and colums in given grid space */
+#portfolio{
+    /* block-size: 800px; */
+    /* giving extra space to the grid container */
+
+    /* below two wont work as we've stated ratio instead of fixed size of rows and columns while defining grid template */
+    /* align-content: center; */
+    /* along block direction */
+    /* justify-content: center; */
+    /* along inline direction */
+}
+
+
+
+/* aligning items inside given cell */
+#portfolio {
+    align-items: stretch;
+    justify-items: stretch;
+    /* overflow: auto; */
 }
 
