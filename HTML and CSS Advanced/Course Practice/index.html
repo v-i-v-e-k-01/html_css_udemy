@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Resume of Tony Alicea</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
     <!-- <style>
         th, td{
             border:2px solid black;
@@ -18,10 +22,35 @@
         }
     </style>
     <link rel="stylesheet" href="styles2.css">
+
 </head>
 
 <body>
     <h1> &NestedLessLess; Resume &NestedGreaterGreater; </h1>
+    <header id="intro">
+        <h2>Tony Alicea</h2>
+        <p>
+            Coder, UX Designer, and Instructor
+        </p>
+        <dl>
+            <div class="website">
+                <dt>Website:</dt>
+                <dd><a href="https://www.anthonyalicea.com" target="_blank">anthonyalicea.com</a> </dd>
+                <dd><img src="google.svg"> <a href="https://www.google.com" target="_blank">google.com</a> </dd>
+                <dd><img src="youtube.svg"><a href="https://www.youtube.com">Youtube</a> </dd>
+            </div>
+            <div class="Phone">
+                <dt class>Phone:</dt>
+                <dd class>555-555-1111</dd>
+            </div>
+            <div>
+                <dt>Twitter:</dt>
+                <dd class="tw"> <img src="twitter.svg"> <a
+                        href="https://www.twitter.com/AnthonyPAlicea">@anthonypalicea</a>
+                </dd>
+            </div>
+        </dl>
+    </header>
     <nav>
         <ul>
             <li><a href="#intro">Intro</a></li>
@@ -35,23 +64,7 @@
         </ul>
     </nav>
     <main>
-        <section id="intro">
-            <h2>Tony Alicea</h2>
-            <p>
-                Coder, UX Designer, and Instructor
-            </p>
-            <dl>
-                <dt>Website</dt>
-                <dd> <a href="https://www.google.com" target="_blank">google.com</a> </dd>
-                <dd> <a href="https://www.anthonyalicea.com" target="_blank">anthonyalicea.com</a> </dd>
 
-                <dt>Phone</dt>
-                <dd>555-555-1111</dd>
-
-                <dt>Twitter</dt>
-                <dd> <a href="https://www.twitter.com/AnthonyPAlicea">@anthonypalicea</a> </dd>
-            </dl>
-        </section>
         <!-- <article id="newart">
             <aside>Electronics</aside>
             <p>Smartphones, Laptops, and more.</p>
@@ -59,19 +72,24 @@
             <p>These products are available in various brands.</p>
         </article> -->
         <article id="aboutme">
-            <header class="flex-header"><h2>About Me</h2></header>
-            <img src="mypicture.png" class="my-picture">
-            <p>
-                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
-                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
-                Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
-            </p>
-            <aside class="motto">
-                <p><small>Don't imitate, understand!</small></p>
-            </aside>
+            <header class="flex-header">
+                <h2>About Me</h2>
+            </header>
+            <section class="article-maincontent">
+                <img src="mypicture.png" class="my-picture">
+                <p>
+                    Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+                    Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+                    Hi! I'm Tony Alicea and I'm <em> happy </em> to have you as a student in my courses.
+                </p>
+                <aside class="motto">
+                    <p><small>Don't imitate, understand!</small></p>
+                </aside>
+            </section>
+
             <!-- <p>Hello this is paragraph 2</p> -->
             <footer>
-                Contact No.
+                <a href="https://www.linkedin.com/anthonyalicea">Contact me</a>
             </footer>
         </article>
 
@@ -144,15 +162,22 @@
 
 
         <section id="portfolio">
-            <h2> Portfolio</h2>
-            <!-- Needs pictures-->
-            <img class="anchor" src="https://picsum.photos/id/165/200/300" alt="farm with blue sky">
-            <img src="https://picsum.photos/id/1045/200" alt="cloud covered mountaintop">       
-            <img src="https://picsum.photos/id/107/250" alt="wheat field with wheat stalks close view">
-            <img src="https://picsum.photos/id/147/300/170" alt="empty ocean with mild waves">
-            <img src="https://picsum.photos/id/306/150" alt="flower among rocks">
-            <img src="https://picsum.photos/id/179/175" alt="waves crashing against boulders">
-            <img src="https://picsum.photos/id/258/120" alt="flock of birds">
+            <!-- <section id="portfolio-main"> -->
+                <h2> Portfolio</h2>
+                <!-- <div id="portfolio-pics"> -->
+                    <!-- Needs pictures-->
+                    <img class="anchor" src="https://picsum.photos/id/165/200/300" alt="farm with blue sky">
+                    <img src="https://picsum.photos/id/1045/200" alt="cloud covered mountaintop">
+                    <img src="https://picsum.photos/id/107/250" alt="wheat field with wheat stalks close view">
+                    <img src="https://picsum.photos/id/147/300/170" alt="empty ocean with mild waves">
+                    <img src="https://picsum.photos/id/306/150" alt="flower among rocks">
+                    <img src="https://picsum.photos/id/179/175" alt="waves crashing against boulders">
+                    <img src="https://picsum.photos/id/258/120" alt="flock of birds">
+                <!-- </div> -->
+            <!-- </section> -->
+            <!-- <section id="desc">
+                Here are some samples of clicked pictures.
+            </section> -->
         </section>
         <section id="testimonials">
             <h2 class="flex-header"> Testimonials</h2>

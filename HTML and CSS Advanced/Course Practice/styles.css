@@ -8,11 +8,53 @@ h2 {
     padding: 1.3rem 0 0 0;
 }
 
+#aboutme section.article-maincontent {
+    display: flex;
+    align-items: center;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    align-items: center;
+
+    p {
+        flex-basis: content;
+        margin: unset;
+        align-self: stretch;
+        align-content: center;
+    }
+
+    .motto {
+        background-color: whitesmoke;
+        text-align: center;
+        flex-basis: content;
+        align-self: stretch;
+        align-content: center;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+}
+
+article footer {
+    flex-basis: 100%;
+}
+
+nav a {
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(19, 76, 12, 0.697);
+    
+}
+
 /* nav ul{
     display: flex;
     justify-content: center;
 } */
 
+
+
+/* Custom property */
+:root{
+    --light-red:rgb(246, 28, 60);
+}
 
 
 
@@ -207,9 +249,9 @@ main {
     max-inline-size: clamp(700px, 80%, 1000px);
     padding-inline: 2rem;
     padding-block: 0;
-    border-inline-start: 2px solid black;
+    /* border-inline-start: 2px solid black;
     border-inline-end: 2px solid black;
-    border-block-end: 2px solid black;
+    border-block-end: 2px solid black; */
 
     margin-inline-start: auto;
     margin-inline-end: auto;
@@ -424,46 +466,50 @@ blockquote.featured {
 /* #aboutme aside footer header img{
     flex-shrink: 0;
 } */
- 
+
 
 
 
 /* flex-basis */
-#aboutme{
+#aboutme {
     display: flex;
     flex-wrap: wrap;
 }
 
-#testimonials{
+.flex-header {
+    flex-basis: 100%;
+}
+
+
+#testimonials {
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: row-reverse; */
     flex-direction: column;
-    blockquote{
-        margin:0;
+
+    blockquote {
+        margin: 0;
     }
 }
 
 
-.flex-header, .motto{
-    flex-basis:100%;
-}
+
 
 /* aligning along main and cross axis  */
-nav ul{
-    display:flex;
+nav ul {
+    display: flex;
     justify-content: space-evenly;
     list-style: none;
 }
 
 
 /* Grid Layout */
-body{
-    display:grid;
+body {
+    display: grid;
 }
 
-#portfolio{
-    display:grid;
+#portfolio {
+    display: grid;
     /* grid-template-columns: 1fr [col1] 1fr 1fr minmax(150px, 1fr); */
     /* 4 columns in total */
     /* names first column col1, states min and max width of last column as 150px and 1fr respectively */
@@ -474,22 +520,22 @@ body{
     /* row-gap:10px; */
     /* column-gap:10px; */
     /* OR */
-    grid-gap:10px;
-    
+    grid-gap: 10px;
+
     /* shorthand */
     /* grid-template: repeat(2, 1fr) / repeat(3, 1fr) minmax(150px, 1fr) */
     /* rows / columns */
-    grid-template: minmax(2em,3em) 1fr/ repeat(3, 1fr) minmax(150px,1fr);
+    grid-template: minmax(2em, 3em) 1fr/ repeat(3, 1fr) minmax(150px, 1fr);
 }
 
 
-#portfolio img{
-    max-inline-size: 100%; 
+#portfolio img {
+    max-inline-size: 100%;
     /* defines maximum size of element as 100% of size of grid cell */
     /* prevents grid from overflowing */
 }
 
-#portfolio img.anchor{
+#portfolio img.anchor {
     /* grid-column-start:3;
     grid-column-end:5;
     grid-row-start:1;
@@ -502,28 +548,30 @@ body{
     /* row-start/column-start/row-end/column-end */
 }
 
-#portfolio h2{
+#portfolio h2 {
     /* grid-row: 1/2;
     grid-column:1/5; */
 }
 
 
 /* naming grid cells */
-#portfolio{
-    grid-template-areas:"portfolio portfolio portfolio portfolio"
-                        "img2 img3 anchor img4"
-                        "img5 img6 anchor img7";
+#portfolio {
+    grid-template-areas: "portfolio portfolio portfolio portfolio"
+        "img2 img3 anchor img4"
+        "img5 img6 anchor img7";
 }
-#portfolio img.anchor{
-    grid-area:anchor;
+
+#portfolio img.anchor {
+    grid-area: anchor;
 }
-#portfolio h2{
-    grid-area:portfolio;
+
+#portfolio h2 {
+    grid-area: portfolio;
 }
 
 
 /* aligning rows and colums in given grid space */
-#portfolio{
+#portfolio {
     /* block-size: 800px; */
     /* giving extra space to the grid container */
 
@@ -543,3 +591,256 @@ body{
     /* overflow: auto; */
 }
 
+
+/* Fonts */
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+h1,
+h2 {
+    font-family: Dosis, sans-serif;
+    font-weight: 300;
+    text-transform: unset;
+    text-transform: uppercase;
+}
+
+#aboutme {
+    background-color: black;
+    color: white;
+
+    .motto {
+        color: black;
+    }
+
+    border-bottom-left-radius: 1em;
+    border-top-right-radius: 1em;
+    padding-inline-start: 1em;
+    padding-block-end: 1em;
+}
+
+#portfolio {
+    background-color: var(--light-red);
+    padding: 1.5em;
+    border-radius: 1em;
+}
+
+main {
+    margin-inline-start: 8%;
+    margin-inline-end: 8%;
+    max-inline-size: unset;
+    /* border-color: white; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* opacity */
+nav {
+    background-color: rgb(170, 161, 161);
+    opacity: 50%;
+    border-color: aliceblue;
+}
+
+nav:hover {
+    opacity: 100%;
+}
+
+
+
+
+/* Background */
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: aliceblue;
+}
+
+
+/* Transitions */
+#portfolio img:hover {
+    opacity: 0.7;
+    transition: opacity 0.5s linear;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+
+    border: none;
+}
+
+button:hover {
+    background-color: var(--light-red);
+    box-shadow: 7px;
+    transition: background-color 0.2s;
+}
+
+
+/* SVG Images  */
+#intro img {
+    inline-size: 1rem;
+}
+
+#intro img.twitter {
+    background-color: white;
+}
+
+
+
+/* Visual appearance */
+#intro {
+    padding-inline:10%;
+
+    dl *{
+        margin: unset;
+    }
+
+    dl{
+        display: grid;
+        grid-template-areas: "website phone twitter";
+
+        align-items: start;
+        justify-items: start;
+        #website{
+            grid-area:website;
+            flex-direction: row;
+        }
+        
+        #phone{
+            grid-area:phone;
+        }
+
+        #twitter{
+            grid-area:twitter;
+        }
+    }
+
+}
+
+
+main #aboutme{
+    margin-block-start: 2em;
+}
+
+article footer{
+    text-align: center;
+}
+
+blockquote.featured{
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+}
+
+#intro{
+    margin-block-start: 0;
+}
+
+h1{
+    border-block-end:1px solid white;
+}
+
+/* @media screen and (min-width:10000px){
+
+} */
+
+/* @media screen and (height >600px){
+
+} */
+
+@media screen and (400px <= width < 800px){
+
+}
+
+@media print {
+    #aboutme{
+        background-color: black;
+        color:white;
+    }
+
+    #contactme{
+        display: none;
+    }
+
+    nav{
+        display: none;
+        height:0;
+        
+    }
+
+}
+
+
+
+/* Nesting */
+
+#aboutme footer{
+    a{
+        &, &:hover, &:focus{
+            color:white;
+        }
+    }
+}
+
+/* Layers */
+
+/* Declaring Layers */
+
+@import url(styles2.css) layer(layer_name1);
+
+@layer{
+    /* styles here */
+}
+
+@layer layer_name2{
+    /* styles here */
+}
+
+@layer layer_name2{
+    /* styles here */
+    @layer layer_name3{
+        /* styles here */
+    }
+}
+
+/* setting layer precedence */
+@layer layer_name2, layer_name1;
+
+/* the last declared above (layer_name1) has highest precedence/priority */
+
+/* if we dont declare layer precedence, by default, precedence from lowest to highest is */
+/*  oldest declared layer < ... < latest declared layer < styles without layer */
+
+
+
+section:not(.article-maincontent){
+    border: 1px solid white;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#aboutme{
+    margin:1rem;
+}
+
+
+
+/* :has() */
+
+label:has(~input:focus, ~textarea:focus, ~select:focus){
+    font-weight: bold;
+}
+
+/* labels which have input tags as siblings and are focused, then the label is applied bold font */
+
+#contactme h2{
+    &:has(~form input:focus, ~form textarea:focus, ~form select:focus){
+        font-weight: bold;
+    }
+}
